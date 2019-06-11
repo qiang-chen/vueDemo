@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .active{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <my-content></my-content>
+        <my-content></my-content>
+        <my-content></my-content>
+        <tet></tet>
+        <btn></btn>
+    </div>
+    <hr>
+    <div id="app1">
+            <my-content></my-content>
+
+    </div>
+    <script src="./js/vue.js">
+    </script>
+    <script>
+
+        //创建了一个全局组建
+        Vue.component("my-content",{
+            template:`<h2 class="active">2123</h2>`,
+            data(){
+                return {
+
+                }
+            }
+        })
+
+        Vue.component("btn",{
+            template:`<div><button @click="num++">点击</button><span>{{num}}</span></div>`,
+            data(){
+                return {
+                    num:1
+                }
+            }
+        })
+
+        let vm=new Vue({
+            el:"#app",
+            data:{
+                 
+            },
+            components:{
+                tet:{
+                    template:`<i>我是子组件<sunzi></sunzi></i>`,
+                    components:{
+                        sunzi:{
+                        template:`<h1>我是孙子组件</h1>`
+                    }
+                    }
+                    
+                }
+            }
+        })
+
+        let vm1b=new Vue({
+            el:"#app1"
+        })
+
+
+
+    </script>
+</body>
+</html>

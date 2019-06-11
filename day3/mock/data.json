@@ -1,0 +1,37 @@
+[{
+    "id": 1,
+    "content": [{
+        "title": "一号图片",
+        "img": "../src/assets/img/1.jpg"
+    }, {
+        "title": "一号图片",
+        "img": "../src/assets/img/2.jpg"
+    }]
+},{
+    "id": 2,
+    "content": [{
+        "title": "二号图片",
+        "img": "../src/assets/img/3.jpg"
+    }, {
+        "title": "二号图片",
+        "img": "../src/assets/img/4.jpg"
+    }]
+},{
+    "id": 3,
+    "content": [{
+        "title": "三号图片",
+        "img": "../src/assets/img/5.jpg"
+    }, {
+        "title": "三号图片",
+        "img": "../src/assets/img/6.jpg"
+    }]
+},{
+    "id": 4,
+    "content": [{
+        "title": "四号图片",
+        "img": "../src/assets/img/7.jpg"
+    }, {
+        "title": "四号图片",
+        "img": "../src/assets/img/8.jpg"
+    }]
+}]

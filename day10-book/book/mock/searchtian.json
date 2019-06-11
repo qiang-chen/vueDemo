@@ -1,0 +1,42 @@
+{
+    "count": 25,
+    "onebox": [],
+    "v": 0,
+    "third_data": [{
+        "rate_count": 0,
+        "title": "123",
+        "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01vGQtGZh74/KM2J01UnyeQoVX.jpg",
+        "source": 100,
+        "rate": 0,
+        "intro": "他是一个，聪敏好学而又调皮的初中生，他已发表过三部长篇小说，是中国年纪最小的省级作协会员，\n全国中学十佳文学少年。\n为了体验生活锻炼自己，他不带分文不靠亲友，十二天行程三千里，饱尝了同龄人不曾有的人生...",
+        "role": [
+            [
+                "作者",
+                "冬阳"
+            ]
+        ],
+        "source_id": "1211590",
+        "id": 396972
+    }],
+    "third_total": 6,
+    "result": 0,
+    "items": [{
+        "rate_count": 5325,
+        "title": "择天记",
+        "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01FGxJIX5Eh/FmiqldFNSmEsCK.jpg",
+        "source": 2,
+        "rate": 885,
+        "intro": "鹿晗、古力娜扎主演《择天记》原著小说；\n命里有时终须有，命里无时要强求。\n\n这是一个长生果的故事。",
+        "role": [
+            [
+                "作者",
+                "猫腻"
+            ]
+        ],
+        "source_id": "270885",
+        "id": 1300359
+    }],
+    "total": 40,
+    "precise_total": 0,
+    "more": true
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <router-view></router-view>
+    </div>
+    <script src="./vue.js"></script>
+    <script src="./vue-router.js"></script>
+    <script>
+    
+        let home={
+            template:`<h1>我是主页面</h1>`
+        }
+
+        let my={
+            template:`<div>这是我的页面</div>`
+        }
+
+        const router = new VueRouter({
+            routes: [
+                {
+                    path:"/home",
+                    component:home
+                },{
+                    path:"/my",
+                    component:my
+                }
+            ]
+        })
+
+        new Vue({
+            el:"#app",
+            router:router
+        })
+
+
+    </script>
+</body>
+</html>

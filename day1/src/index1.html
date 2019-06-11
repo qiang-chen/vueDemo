@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box"></div>
+    <script>
+        let arr = ["http://pic29.nipic.com/20130601/12122227_123051482000_2.jpg", "http://pic15.nipic.com/20110813/1993003_205156492136_2.jpg", "http://www.pptok.com/wp-content/uploads/2012/08/xunguang-4.jpg", "http://pic40.nipic.com/20140413/12524762_163417225134_2.jpg", "http://img02.tooopen.com/images/20150507/tooopen_sy_122395947985.jpg", "http://t8.baidu.com/it/u=3660968530,985748925&fm=191&app=48&wm=1,17,90,45,20,7&wmo=0,0&n=0&g=0n&f=JPEG?sec=1853310920&t=9b4f100f0eedfe853fad24a58a4e1ad7", "http://img.zcool.cn/community/01b078574706206ac72525ae0beaed.jpg@2o.jpg"];
+
+
+        function imgLoad(src) {
+            return new Promise((resolve, reject) => {
+                let img = document.createElement("img");
+                img.src = src;
+                img.onload = function () {
+                    //如果图片加载成功调用成功
+                    resolve(img)
+                }
+            })
+        }
+
+        let pro = [];
+        arr.forEach((el,index)=>{
+            pro.push(imgLoad(el));
+            Promise.race(pro).then(res => {
+                console.log(res)
+                box.appendChild(res);
+                pro.splice(index,1)
+                console.log(pro)
+            })
+        })
+
+
+
+        // Promise.all(pro).then(res=>{
+        //     for(let el of res){
+        //         box.appendChild(el);
+        //     }
+
+        // })
+    </script>
+</body>
+
+</html>

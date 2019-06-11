@@ -1,0 +1,23 @@
+[
+    {
+        "url":"./static/logo.png",
+        "title":"尚品鸡胗",
+        "content":"小包便携带",
+        "price":3,
+        "id":1
+    },
+    {
+        "url":"./static/logo.png",
+        "title":"小鸡腿",
+        "content":"肉香浓郁",
+        "price":3,
+        "id":2
+    },
+    {
+        "url":"./static/logo.png",
+        "title":"蜂蜜",
+        "content":"方便携带",
+        "price":3,
+        "id":3
+    }
+]

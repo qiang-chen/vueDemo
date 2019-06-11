@@ -1,0 +1,47 @@
+const HtmlWebpackPlugin=require("html-webpack-plugin");
+module.exports={
+    entry:"./src/js/index.js",
+    module:{
+        rules:[
+            {
+                test:/\.(sass|scss|css)$/,
+                use:['style-loader','css-loader','sass-loader']
+            },{
+                test:/\.(jpe?g|png|gif|svg)$/i,
+                use:{
+                    loader:"url-loader",
+                    options:{
+                        limit:10240,
+                        name:"assets/[name].[hash:6].[ext]"
+                    }
+                }
+            },{
+                test:/\.(eot|ttf|svg|woff2?)$/,
+                use:["url-loader"]
+            }
+        ]
+    },
+    plugins:[
+        new HtmlWebpackPlugin({
+            template:"./src/index.html",//设置模板
+            filename:'index.html',
+            inject:true
+        })
+    ],
+    devServer:{
+        open:true,
+        port:3000,
+        host:"0.0.0.0",
+        hot:true,
+        //请求拦截
+        before(app){
+            app.post("/api/login",(req,res)=>{
+                console.log(req);
+                res.json({
+                    code:1,
+                    msg:"登陆成功"
+                })
+            })
+        }
+    }
+}

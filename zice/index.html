@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+        <div>{{data | dataFormat('yyyy-MM-dd hh:mm:ss')}}</div>
+    <script src="../day7-zhiling/vue.js"></script>
+    <script>
+        // let loadImg = (src) => {
+        //     return new Promise((resolve, reject) => {
+        //         //创建标签
+        //         let img=document.createElement("img");
+        //         img.src=src;
+        //         img.onload=()=>{
+        //             resolve()
+        //         }
+
+        //     })
+        // }
+        // const imgs = ['url1', 'url2', 'url3'];
+
+        // // 依次加载图片
+        // async function fAsync(imgs) {
+        //     // write your code here
+        //     for(let el of imgs){
+        //         loadImg(el)
+        //     }
+        // }
+
+        // fAsync(imgs);
+
+
+        Vue.filter('formatDate', function(value){
+       let date = new Date();//获取当前时间
+       date.setTime(value);//将当前时间设置为传入的值
+       let year = date.getFullYear(),//获取当前年
+      month = (date.getMonth() + 1).toString().padStart(2, '0'),//获取当前月
+      day = date.getDate().toString().padStart(2, '0'),//日
+      hour = date.getHours().toString().padStart(2, '0'),//小时
+      min = date.getMinutes().toString().padStart(2, '0'),//分钟
+      sec = date.getSeconds().toString().padStart(2, '0');//秒
+     return `${year}-${month}-${day} ${hour}:${min}:${sec}`//拼接
+});
+
+    </script>
+</body>
+
+</html>

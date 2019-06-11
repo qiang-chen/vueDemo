@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script>
+        let count=0;
+        function Load(str){
+            return new Promise((resolve,reject)=>{
+                let index=str.lastIndexOf(".");
+                if(str.slice(index)==".css"){
+                    let link=document.createElement("link");
+                    link.href=str;
+                    document.body.appendChild(link)
+                    link.onload=()=>{
+                        console.log(655555555)
+                        count++;
+                        console.log(count)
+                        resolve(count)
+                    }
+                }else if(str.slice(index)==".js"){
+                    let script=document.createElement("script");
+                    script.src=str;
+                    document.body.appendChild(script)
+                    script.onload=()=>{
+                        console.log(555)
+                        count++;
+                        resolve(count)
+                    }
+                }
+            })
+        }
+
+        let file=["./js/index.js","./css/index.css"];
+        let arr=[];
+        file.forEach(item=>{
+            arr.push(Load(item))
+        })
+        console.log(arr)
+        Promise.all(arr).then(res=>{
+            console.log(res,"6555")
+        })
+
+
+    </script>
+</body>
+</html>

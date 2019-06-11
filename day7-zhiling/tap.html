@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .active{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="app">
+        <ul>
+            <li v-for="(item,index) in arr" @click=tap(index) :class="{'active':item==status}">{{item}}</li>
+        </ul>
+        <div class="content" v-show="status=='tap1'">
+            {{status}}
+        </div>
+        <div class="content" v-show="status=='tap2'">
+            {{status}}
+        </div>
+        <div class="content" v-show="status=='tap3'">
+            {{status}}
+        </div>
+    </div>
+    <script src="./vue.js"></script>
+
+    <script>
+        console.log(Vue)
+        const vm = new Vue({
+            el: "#app",
+            data: {
+                arr: ["tap1", "tap2", "tap3"],
+                status: "tap1"
+            },
+            methods: {
+                tap(index) {
+                    this.status = this.arr[index]
+                }
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

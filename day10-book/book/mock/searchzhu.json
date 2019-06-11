@@ -1,0 +1,187 @@
+{
+    "count": 25,
+    "onebox": [],
+    "v": 0,
+    "third_data": [{
+        "rate_count": 0,
+        "title": "123",
+        "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01vGQtGZh74/KM2J01UnyeQoVX.jpg",
+        "source": 100,
+        "rate": 0,
+        "intro": "他是一个，聪敏好学而又调皮的初中生，他已发表过三部长篇小说，是中国年纪最小的省级作协会员，\n全国中学十佳文学少年。\n为了体验生活锻炼自己，他不带分文不靠亲友，十二天行程三千里，饱尝了同龄人不曾有的人生...",
+        "role": [
+            [
+                "作者",
+                "冬阳"
+            ]
+        ],
+        "source_id": "1211590",
+        "id": 396972
+    }],
+    "third_total": 6,
+    "result": 0,
+    "items": [{
+            "rate_count": 1376,
+            "title": "诛仙",
+            "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01YqmjmWxtq/Eis58fZCsBFvXY.jpg",
+            "source": 2,
+            "rate": 846,
+            "intro": "【李易峰、赵丽颖主演同名电视剧《诛仙青云志》】这个故事，便是从“青云门”开始的。",
+            "role": [
+                [
+                    "作者",
+                    "萧鼎"
+                ]
+            ],
+            "source_id": "319207",
+            "id": 1710527
+        },
+        {
+            "rate_count": 516,
+            "title": "诛仙前传：蛮荒行",
+            "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01sXJN0u7t2/nqSmkVBT5glFWh.jpg",
+            "source": 2,
+            "rate": 812,
+            "intro": "八荒六合，九幽魔障。青云众志，锦绣河山。\r\n是年，仇忘语初登圣魔之位，率众魔屠戮青云，意图取而代之。...",
+            "role": [
+                [
+                    "作者",
+                    "萧鼎"
+                ]
+            ],
+            "source_id": "345160",
+            "id": 1746331
+        },
+        {
+            "rate_count": 66,
+            "title": "诛仙旖途",
+            "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01dQiMh1jhV/yHeIhVselMUdvC.jpg",
+            "source": 2,
+            "rate": 648,
+            "intro": "穿入诛仙世界里能干嘛？当然是泡妞和踩人啦！\n陆雪琪？这是必须的。\n田灵儿？这个也不能少。\n碧瑶？你这...",
+            "role": [
+                [
+                    "作者",
+                    "布撸丝"
+                ]
+            ],
+            "source_id": "317590",
+            "id": 1705640
+        },
+        {
+            "rate_count": 3,
+            "title": "诛仙情缘",
+            "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01JuRqET1NJ/rL0uQuCM76XHmY.jpg",
+            "source": 2,
+            "rate": 866,
+            "intro": "九州大地，大劫将至，陷入乱世之中，她是诛仙剑魂转世，也是人皇后裔，天生拥有仙骨，仙脉，仙血，仙资绝世...",
+            "role": [
+                [
+                    "作者",
+                    "知识分子"
+                ]
+            ],
+            "source_id": "364335",
+            "id": 1791799
+        },
+        {
+            "rate_count": 4,
+            "title": "诛仙大帝",
+            "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p019v944zMpU/LeAabge32NIspz.jpg",
+            "source": 2,
+            "rate": 700,
+            "intro": "被相伴千年的道侣背叛，蛮龙从凡界复活，却意外打开了神魔墓地，至此蛮龙一路斩杀，踏入仙域，终有一日，让...",
+            "role": [
+                [
+                    "作者",
+                    "野蛮的豆腐"
+                ]
+            ],
+            "source_id": "370291",
+            "id": 1797910
+        },
+        {
+            "rate_count": 1,
+            "title": "诛仙神尊",
+            "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01taGBFByvH/aVR9GSuRdBIaQy.jpg",
+            "source": 2,
+            "rate": 200,
+            "intro": "剑道传人，逆天直上，碎虚空，斩修界，叱咤十方！\r\n剑气纵横三万里，一剑光寒御九霄！\r\n一代剑道宗师叶...",
+            "role": [
+                [
+                    "作者",
+                    "深海浮冰"
+                ]
+            ],
+            "source_id": "373239",
+            "id": 1801137
+        },
+        {
+            "rate_count": 3,
+            "title": "三界诛仙",
+            "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p0194MUIgQpx/ZzvkgTdzEYyKtN.jpg",
+            "source": 2,
+            "rate": 800,
+            "intro": "一柄屠天剑，斩尽人魔妖。一双无敌拳，砸破天与地。胸揽三界美人，横推各族天骄。脚踏诸天星辰，斩人灭神诛...",
+            "role": [
+                [
+                    "作者",
+                    "时间长河"
+                ]
+            ],
+            "source_id": "373548",
+            "id": 1801406
+        },
+        {
+            "rate_count": 0,
+            "title": "魔幻诛仙史",
+            "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01SBfaBMObd/1xIqDq3abXoYtg.jpg",
+            "source": 2,
+            "rate": 0,
+            "intro": "太古时期，神州大地一片茫然，四周凄凉无比。随着时间的流逝，人类出现了，并占神州大地主要地位。由于神的...",
+            "role": [
+                [
+                    "作者",
+                    "郭凌"
+                ]
+            ],
+            "source_id": "380857",
+            "id": 1809131
+        },
+        {
+            "rate_count": 74,
+            "title": "续诛仙碧雪下凡",
+            "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01og0IymBS2/QBpJyW1Olfurim.jpg",
+            "source": 2,
+            "rate": 686,
+            "intro": "水调歌头·雪琪\n天琊望月舞，朝朝相思苦。九天仙下凡间，泪竹影涟涟。死灵渊无惧死，诛仙剑与谁诛，人去人...",
+            "role": [
+                [
+                    "作者",
+                    "青叶飘然"
+                ]
+            ],
+            "source_id": "37417",
+            "id": 1065182
+        },
+        {
+            "rate_count": 2,
+            "title": "西游之诛仙伐佛",
+            "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01QwARlA5za/oERkszoi2VE9wR.jpg",
+            "source": 2,
+            "rate": 600,
+            "intro": "【本书已缘更，慎入！】成为搅了蟠桃大会，吞了金丹之后的孙悟空，乱斗西游！\r\n前无路，退阻行，那就改变...",
+            "role": [
+                [
+                    "作者",
+                    "千年坎坷"
+                ]
+            ],
+            "source_id": "409443",
+            "id": 1854659
+        }
+    ],
+    "total": 40,
+    "precise_total": 0,
+    "more": true
+}

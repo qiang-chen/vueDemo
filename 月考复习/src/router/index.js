@@ -1,0 +1,25 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+
+Vue.use(Router)
+
+export default new Router({
+  routes: [
+    {
+         path: '/',
+         component: () => import('@/views/home')
+    },
+    {
+        path: '/classify',
+        component: () => import('@/views/classify')
+    },
+    {
+        path: '/car',
+        component: () => import('@/views/car')
+    },
+    {
+        path: '/my',
+        component: () => import('@/views/my')
+    }
+  ]
+})

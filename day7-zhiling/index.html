@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .active{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        {{mas}}
+
+        <ul>
+            <li v-for="(item,index) in list" v-if="item.isUP" :class="{'active':index==0}">{{index<9?"0"+(index+1):index+1}}........{{item.title}}----{{item.anthor}}</li>
+        </ul>
+
+        <span v-if="num>=90" :class="['active']">及格</span>
+        <span v-else="num<90">笨蛋</span>
+        
+        <span v-show="num<=78">
+            如果我是笨蛋我就出来
+        </span>
+
+
+        <input type="text" v-model:value="tet">
+        <p v-text="msg"></p>
+        <p v-html="msg" v-bind:class="['active']"></p>
+        <p v-for="item in 4">{{item}}</p>
+
+        <b v-for="(item,key,index) in opj">{{item}},,,{{key}},,{{index}}</b>
+
+    </div>
+    <script src="./vue.js"></script>
+    <script>
+    
+    let vm=new Vue({
+        el:"#app",
+        data:{
+            mas:"陈强",
+            num:98,
+            msg:"<h1>我是html的测试内容</h1>",
+            tet:"我是文本框的内容",
+            list:[
+                {
+                    title:"庸人自扰",
+                    anthor:"李四",
+                    isUP:true
+                },{
+                    title:"一个人的北京",
+                    anthor:"张三",
+                    isUP:true
+                },{
+                    title:"绿色",
+                    anthor:"王五",
+                    isUP:false
+                }
+            ],
+            opj:{
+               a:1,
+               b:2,
+               c:3
+            }
+        }
+    })
+
+    </script>
+</body>
+</html>
